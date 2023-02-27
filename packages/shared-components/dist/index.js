@@ -74,7 +74,12 @@ var NewTabLink = (_a) => {
     "children",
     "href"
   ]);
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", __spreadProps(__spreadValues({ target: "_blank", rel: "noreferrer", href }, other), { children }));
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", __spreadProps(__spreadValues({ target: "_blank", rel: "noreferrer", href }, other), { children: [
+    children,
+    " ",
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+    " this has changed"
+  ] }));
 };
 
 // src/CounterButton.tsx

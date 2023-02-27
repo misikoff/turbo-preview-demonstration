@@ -31,7 +31,7 @@ var __objRest = (source, exclude) => {
 };
 
 // src/NewTabLink.tsx
-import { jsx } from "react/jsx-runtime";
+import { jsx, jsxs } from "react/jsx-runtime";
 var NewTabLink = (_a) => {
   var _b = _a, {
     children,
@@ -40,15 +40,20 @@ var NewTabLink = (_a) => {
     "children",
     "href"
   ]);
-  return /* @__PURE__ */ jsx("a", __spreadProps(__spreadValues({ target: "_blank", rel: "noreferrer", href }, other), { children }));
+  return /* @__PURE__ */ jsxs("a", __spreadProps(__spreadValues({ target: "_blank", rel: "noreferrer", href }, other), { children: [
+    children,
+    " ",
+    /* @__PURE__ */ jsx("br", {}),
+    " this has changed"
+  ] }));
 };
 
 // src/CounterButton.tsx
 import * as React from "react";
-import { jsx as jsx2, jsxs } from "react/jsx-runtime";
+import { jsx as jsx2, jsxs as jsxs2 } from "react/jsx-runtime";
 var CounterButton = () => {
   const [count, setCount] = React.useState(0);
-  return /* @__PURE__ */ jsxs(
+  return /* @__PURE__ */ jsxs2(
     "div",
     {
       style: {
@@ -58,7 +63,7 @@ var CounterButton = () => {
         fontWeight: 500
       },
       children: [
-        /* @__PURE__ */ jsxs("p", { style: { margin: "0 0 1.5rem 0" }, children: [
+        /* @__PURE__ */ jsxs2("p", { style: { margin: "0 0 1.5rem 0" }, children: [
           "This component is from",
           " ",
           /* @__PURE__ */ jsx2(
@@ -73,7 +78,7 @@ var CounterButton = () => {
             }
           )
         ] }),
-        /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsxs(
+        /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsxs2(
           "button",
           {
             style: {
