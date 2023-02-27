@@ -11,12 +11,12 @@
   "dependencies": {
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.16",
-    "@next/mdx": "^13.2.1",
     "clsx": "^1.2.1",
     "lodash": "^4.17.21",
     "next": "^13.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "shared-components": "*"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
