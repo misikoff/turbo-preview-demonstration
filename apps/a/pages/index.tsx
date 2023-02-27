@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Home Page - A</title>
       </Head>
-      <span className='mt-8 text-xl'>This is App A</span>
+      <span className='mt-8 text-xl'>This is App A-change3</span>
       <NewTabLink href='/'>this is from a shared library</NewTabLink>
     </>
   )
